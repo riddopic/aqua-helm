@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.18.3
 RUN apk add --no-cache ca-certificates git curl && \
     wget -q https://get.helm.sh/helm-v3.7.2-linux-amd64.tar.gz && \
     tar -zxvf helm-v3.7.2-linux-amd64.tar.gz && \
